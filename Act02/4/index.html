@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+
+    <title>Calificaciones | M07</title>
+    <meta name="description" content="Programación basada en lenguajes de marcas con código embebido">
+    <meta name="author" content="Dan Marius Dumitrescu">
+    <link rel="stylesheet" type="text/css" href="view.css" media="all">
+    <script type="text/javascript" src="view.js"></script>
+</head>
+<!--3.	Realizar una aplicación que tenga una página web con un formulario con dos campos: uno para introducir nuestro
+nombre y otro para introducir nuestra edad. El formulario nos enviará a otra página en la que se nos mostrará uno de
+los siguientes mensajes, en función de nuestra edad:
+
+Hola NOMBRE, tienes EDAD años.
+Hola NOMBRE, eres menor de edad, no puedes pasar.
+Hacer el programa usando primero un formulario de tipo POST.-->
+<body id="main_body" >
+
+<img id="top" src="top.png" alt="">
+<div id="form_container">
+
+        <h1><a>Exámenes</a></h1>
+        <form id="form_17593" class="appnitro"  method="post" action="nota.php">
+            <div class="form_description">
+                <h2>Calificaciones</h2>
+                <p></p>
+            </div>
+            <ul >
+
+                <li id="li_1" >
+                    <label class="description" for="element_1">Introduzca la nota obtenida: </label>
+                    <div>
+                        <input id="element_1" name="nota" class="element text small" type="text" maxlength="255" value=""/>
+                    </div>
+                </li>
+
+                <li class="buttons">
+                    <input type="hidden" name="form_id" value="17593" />
+                    <input id="saveForm" class="button_text" type="submit" name="Enviar" value="Enviar" />
+                </li>
+            </ul>
+        </form>
+    </div>
+<img id="bottom" src="bottom.png" alt="">
+</body>
+</html>
